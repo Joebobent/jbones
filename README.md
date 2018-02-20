@@ -18,7 +18,7 @@ Custom WordPress theme with a simple design for easy modification, and many pre-
 I built this theme with the intent of using it as the base of multiple different websites that I could easily modify with child themes. I kept the design simple yet modern so there wouldn't be too much CSS to modify, yet powerful enough to make quick renditions from the start of a project.
 
 == Installation ==
-	
+
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
@@ -40,8 +40,8 @@ Customizer:
   -- Light
   -- Dark
   - Site Header Layout
-  -- Compact 
-  -- Center Stacked 
+  -- Compact
+  -- Center Stacked
   -- Sidebar (Coming Soon)
   - Site Heder Background Color
   - Site Header Pattern Image
