@@ -1,0 +1,2 @@
+# jbones
+Custom WordPress theme.
