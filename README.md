@@ -1,45 +1,106 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+=== J-Bones ===
 
-_s
-===
+Author: Stephen C. Osborn
+Contributors: automattic
+Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments, page-options, post-options
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Requires at least: 4.0
+Tested up to: 4.4.2
+Stable tag: 1.0.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+A starter theme called J-Bones, or underscores.
 
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A helpful 404 template.
-* A sample custom header implementation in `inc/custom-header.php` that can be activated by uncommenting one line in `functions.php` and adding the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/extras.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+== Description ==
 
-Getting Started
----------------
+Custom WordPress theme with a simple design for easy modification, and many pre-built features.
+I built this theme with the intent of using it as the base of multiple different websites that I could easily modify with child themes. I kept the design simple yet modern so there wouldn't be too much CSS to modify, yet powerful enough to make quick renditions from the start of a project.
 
-If you want to keep it simple, head over to http://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
+== Installation ==
 
-If you want to set things up manually, download `_s` from GitHub. The first thing you want to do is copy the `_s` directory and change the name to something else (like, say, `megatherium`), and then you'll need to do a five-step find and replace on the name in all the templates.
+1. In your admin panel, go to Appearance > Themes and click the Add New button.
+2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
+3. Click Activate to use your new theme right away.
 
-1. Search for `'_s'` (inside single quotations) to capture the text domain.
-2. Search for `_s_` to capture all the function names.
-3. Search for `Text Domain: _s` in style.css.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.
-5. Search for `_s-` to capture prefixed handles.
+== Features ==
 
-OR
+Customizer:
+ * Site Identity
+  - Phone Number
+  - Address
+  - Copyright
+ * Site Header / Footer
+  - Top Bar
+  -- Disable
+  -- Top Bar
+  -- Overlapping
+  - Enable Search Bar
+  - Site Header Contrast
+  -- Light
+  -- Dark
+  - Site Header Layout
+  -- Compact
+  -- Center Stacked
+  -- Sidebar (Coming Soon)
+  - Site Heder Background Color
+  - Site Header Pattern Image
+  - Center Logo (Works best if site title is two words)
+  - Site Footer Contrast
+  -- Light
+  -- Dark
+  - Enable Social Buttons in Footer
+  - Footer Background Image
+ * Page / Blog Options
+ ** General Settings
+  - Enable Back To Top Button
+  - Enable Formats
+  - Enable Format Icons
+  - Blog Width Type
+  -- Full Width
+  -- Sections
+ ** Background Settings
+  - Background Color
+  - Background Image
+ ** Header Settings
+  - Content Header Text Align
+  -- Default
+  -- Left
+  -- Center
+  -- Right
+  - Header Text Color
+  - Current header image
+ * Menus
+  - Social Networks
 
-* Search for: `'_s'` and replace with: `'megatherium'`
-* Search for: `_s_` and replace with: `megatherium_`
-* Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
-* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium</code>
-* Search for: `_s-` and replace with: `megatherium-`
+Metabox:
+ * Top Content (Defaults above page content)
+  - Go above site header (Places content at very top of page above site header)
+  - TinyMCE content editor (Shortcodes work here)
+ * Page Class
+  - Add a custom CSS class to be applied to this post / page
+ * Page Sidebar (Populates dropdown with all site sidebars)
+  - Choose a Sidebar (Defaults to disabled)
+ * Page Header Settings
+  - Set header background image (Depricated in recent WordPress update, needs to be fixed)
+  - Title Alignment
+  -- Default
+  -- Left
+  -- Center
+  -- Right
+  - Hide Title (Removes content header)
 
-Then, update the stylesheet header in `style.css` and the links in `footer.php` with your own information. Next, update or delete this readme.
+== Frequently Asked Questions ==
 
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+Q: Does this theme support any plugins?
 
-Good luck!
+J-Bones includes support for Infinite Scroll in Jetpack.
+
+== Changelog ==
+
+= 1.0 - February 20 - First Publish
+
+== Credits ==
+
+* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
