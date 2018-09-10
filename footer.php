@@ -9,10 +9,6 @@
  * @package J-Bones
  */
 
-// Footer Variables
-$footerContrast = get_theme_mod( 'site_footer_contrast' );
-
-
 ?>
 	<?php if ( get_theme_mod( 'back_to_top' ) ) : ?>
 		<a href="#page" id="backTop">Back To Top</a>
@@ -20,7 +16,7 @@ $footerContrast = get_theme_mod( 'site_footer_contrast' );
 	</div><!-- #content -->
 
 
-	<footer id="colophon" class="site-footer<?php if ($footerContrast == 'dark') : echo ' dark'; endif; ?>" role="contentinfo"<?php if ( get_theme_mod( 'footer_background' ) ) : echo ' style="background-image: url(\'' . get_theme_mod( 'footer_background' ) . '\'"'; endif; ?>>
+	<footer id="colophon" class="site-footer" role="contentinfo"<?php if ( get_theme_mod( 'footer_background' ) ) : echo ' style="background-image: url(\'' . get_theme_mod( 'footer_background' ) . '\'"'; endif; ?>>
 		<?php if ( get_theme_mod( 'footer_socials' ) ) : include( get_template_directory() . '/inc/social-media.php' ); endif; ?>
 		<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
 			<aside id="footer-widgets" class="widget-area" role="complementary">
@@ -44,7 +40,6 @@ $footerContrast = get_theme_mod( 'site_footer_contrast' );
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script src="http://localhost:35729/livereload.js"></script>
 
 </body>
 </html>

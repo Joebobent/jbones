@@ -16,6 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 <?php wp_head(); ?>
 </head>
@@ -119,10 +120,10 @@
 							</nav>
 						<?php } ?>
 						<?php // Contact variables
-							$contactPhone 	= get_theme_mod( 'jbones_phone' );
-							$contactAddress = get_theme_mod( 'jbones_address' );
-						?>
-						<?php if ( $contactPhone || $contactAddress ) : ?>
+						$contactPhone 	= get_theme_mod( 'jbones_phone' );
+						$contactAddress = get_theme_mod( 'jbones_address' );
+
+						if ( $contactPhone || $contactAddress ) : ?>
 							<div class="contact <?php if ( $contactAddress ) : echo 'address'; endif;?>">
 								<?php if ( $contactPhone ) : ?>
 									<p class="phone"><a href="tel:<?php echo preg_replace("/[^0-9]/","", $contactPhone ); ?>"><?php echo $contactPhone; ?></a></p>

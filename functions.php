@@ -167,10 +167,6 @@ add_action( 'widgets_init', 'jbn_widgets_init' );
 add_filter( 'widget_text', 'shortcode_unautop' );
 add_filter( 'widget_text', 'do_shortcode' );
 
-// Prevent TinyMCE from modifying post code
-remove_filter ('the_content', 'wpautop');
-
-
 
 /**
  * Load jQuery
@@ -189,6 +185,9 @@ function portolio_jquery_enqueue() {
 function jbn_scripts() {
 	wp_enqueue_style( 'jbn-style', get_stylesheet_uri() );
 
+	// Manually enqued into header.php to add integrety attributes
+	// wp_enqueue_style( 'jbn-fontawesome', 'https://use.fontawesome.com/releases/v5.1.0/css/all.css' );
+
 	wp_enqueue_script( 'waypt', get_template_directory_uri() . '/js/waypts.min.js', array(), '', true );
 
 	wp_enqueue_script( 'custom-jquery', get_template_directory_uri() . '/js/custom.js', array(), '', true );
@@ -202,7 +201,12 @@ function jbn_scripts() {
 	}
 
 }
+
+
+
+
 add_action( 'wp_enqueue_scripts', 'jbn_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
@@ -233,6 +237,7 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load Post / Page metabox data.
  */
 require get_template_directory() . '/inc/metabox.php';
+
 
 
 

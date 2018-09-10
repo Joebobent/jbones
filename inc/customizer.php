@@ -152,21 +152,6 @@ function jbn_customize_register( $wp_customize ) {
             return true; else : return false; endif;
     } // site_header_stacked
 
-    $wp_customize->add_setting( 'site_footer_contrast', array(
-        'default'       => 'light'
-    ) ); // Header Contrast
-    $wp_customize->add_control( 'site_footer_contrast', array(
-        'label'         => __( 'Site Footer Contrast', 'jbones' ),
-        'section'       => 'site_header_conf',
-        'settings'      => 'site_footer_contrast',
-        'type'          => 'radio',
-        'default'       => 'light',
-        'choices'       => array(
-            'light'     => 'Light',
-            'dark'      => 'Dark',
-        ),
-    ) );
-
     $wp_customize->add_setting( 'footer_socials' ); // Enable Back To Top Button
     $wp_customize->add_control( 'footer_socials', array(
         'label'         => __( 'Enable Social Buttons in Footer', 'jbones' ),
